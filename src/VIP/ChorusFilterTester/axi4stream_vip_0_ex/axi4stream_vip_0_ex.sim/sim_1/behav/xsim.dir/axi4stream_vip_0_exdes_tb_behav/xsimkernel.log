@@ -1,0 +1,4 @@
+Running: xsim.dir/axi4stream_vip_0_exdes_tb_behav/xsimk -simmode gui -wdb axi4stream_vip_0_exdes_tb_behav.wdb -simrunnum 0 -socket 32859
+Design successfully loaded
+Design Loading Memory Usage: 44052 KB (Peak: 44060 KB)
+Design Loading CPU Usage: 20 ms

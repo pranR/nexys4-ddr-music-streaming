@@ -1,0 +1,26 @@
+{
+   guistr: "# # String gsaved with Nlview 6.6.8  2016-12-21 bk=1.3817 VDI=40 GEI=35 GUI=JA:1.6
+#  -string -flagsOSRD
+preplace port reset_rtl -pg 1 -y 80 -defaultsOSRD
+preplace port ready -pg 1 -y 200 -defaultsOSRD
+preplace port clock_rtl -pg 1 -y 100 -defaultsOSRD
+preplace portBus AXIBus -pg 1 -y 90 -defaultsOSRD
+preplace portBus dataOut -pg 1 -y 40 -defaultsOSRD
+preplace portBus valid -pg 1 -y 220 -defaultsOSRD
+preplace inst ChorusFilter_0 -pg 1 -lvl 2 -y 20 -defaultsOSRD
+preplace inst axi4stream_vip_0 -pg 1 -lvl 1 -y -20 -defaultsOSRD
+preplace netloc axi4stream_vip_0_M_AXIS 1 1 1 N
+preplace netloc axi4stream_vip_0_m_axis_tvalid 1 1 2 210J -100 620J
+preplace netloc axi4stream_vip_0_m_axis_tdata 1 1 2 200 -110 640J
+preplace netloc Net 1 0 2 -100 80 190
+preplace netloc ChorusFilter_0_dataOut 1 2 1 630
+preplace netloc ChorusFilter_0_s00_axis_tready 1 1 2 200 140 610J
+preplace netloc clk_wiz_clk_out1 1 0 2 -110 70 N
+levelinfo -pg 1 -130 50 440 660 -top -210 -bot 290
+",
+}
+{
+   da_board_cnt: "21",
+   da_clkrst_cnt: "4",
+   da_mb_cnt: "2",
+}

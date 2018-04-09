@@ -1,0 +1,422 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:10 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Wed Mar 21 13:53:52 2018
+# Process ID: 17518
+# Current directory: /nfs/ug/homes-0/y/yusufal5/Desktop/ChorusFilterTester/project_1/project_1.runs/design_1_ChorusFilter_0_3_synth_1
+# Command line: vivado -log design_1_ChorusFilter_0_3.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_ChorusFilter_0_3.tcl
+# Log file: /nfs/ug/homes-0/y/yusufal5/Desktop/ChorusFilterTester/project_1/project_1.runs/design_1_ChorusFilter_0_3_synth_1/design_1_ChorusFilter_0_3.vds
+# Journal file: /nfs/ug/homes-0/y/yusufal5/Desktop/ChorusFilterTester/project_1/project_1.runs/design_1_ChorusFilter_0_3_synth_1/vivado.jou
+#-----------------------------------------------------------
+source design_1_ChorusFilter_0_3.tcl -notrace
+Command: synth_design -top design_1_ChorusFilter_0_3 -part xc7a100tcsg324-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t-csg324'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t-csg324'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 17540 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1197.352 ; gain = 69.000 ; free physical = 4697 ; free virtual = 34175
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'design_1_ChorusFilter_0_3' [/nfs/ug/homes-0/y/yusufal5/Desktop/ChorusFilterTester/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_ChorusFilter_0_3/synth/design_1_ChorusFilter_0_3.v:56]
+INFO: [Synth 8-638] synthesizing module 'ChorusFilter_v1_0' [/nfs/ug/homes-0/y/yusufal5/Desktop/ChorusFilterTester/project_1/project_1.srcs/sources_1/bd/design_1/ipshared/a5c6/hdl/ChorusFilter_v1_0.v:4]
+	Parameter C_S00_AXIS_TDATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'ChorusFilter' [/nfs/ug/homes-0/y/yusufal5/Desktop/ChorusFilterTester/project_1/project_1.srcs/sources_1/bd/design_1/ipshared/a5c6/src/ChorusFilter.v:23]
+INFO: [Synth 8-638] synthesizing module 'SineLUT' [/nfs/ug/homes-0/y/yusufal5/Desktop/ChorusFilterTester/project_1/project_1.srcs/sources_1/bd/design_1/ipshared/a5c6/src/SineLUT.v:3]
+	Parameter size bound to: 44100 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'BRAM' [/nfs/ug/homes-0/y/yusufal5/Desktop/ChorusFilterTester/project_1/project_1.srcs/sources_1/bd/design_1/ipshared/a5c6/src/SineLUT.v:29]
+	Parameter size bound to: 44100 - type: integer 
+INFO: [Synth 8-3876] $readmem data file '/nfs/ug/homes-0/y/yusufal5/ip_repo/ChorusFilter_1.0/src/LUT.txt' is read successfully [/nfs/ug/homes-0/y/yusufal5/Desktop/ChorusFilterTester/project_1/project_1.srcs/sources_1/bd/design_1/ipshared/a5c6/src/SineLUT.v:40]
+INFO: [Synth 8-256] done synthesizing module 'BRAM' (1#1) [/nfs/ug/homes-0/y/yusufal5/Desktop/ChorusFilterTester/project_1/project_1.srcs/sources_1/bd/design_1/ipshared/a5c6/src/SineLUT.v:29]
+WARNING: [Synth 8-350] instance 'LUT' of module 'BRAM' requires 6 connections, but only 4 given [/nfs/ug/homes-0/y/yusufal5/Desktop/ChorusFilterTester/project_1/project_1.srcs/sources_1/bd/design_1/ipshared/a5c6/src/SineLUT.v:25]
+INFO: [Synth 8-256] done synthesizing module 'SineLUT' (2#1) [/nfs/ug/homes-0/y/yusufal5/Desktop/ChorusFilterTester/project_1/project_1.srcs/sources_1/bd/design_1/ipshared/a5c6/src/SineLUT.v:3]
+INFO: [Synth 8-638] synthesizing module 'CircularBuffer' [/nfs/ug/homes-0/y/yusufal5/Desktop/ChorusFilterTester/project_1/project_1.srcs/sources_1/bd/design_1/ipshared/a5c6/src/CircularBuffer.v:7]
+	Parameter bufferSize bound to: 44100 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'BRAM2' [/nfs/ug/homes-0/y/yusufal5/Desktop/ChorusFilterTester/project_1/project_1.srcs/sources_1/bd/design_1/ipshared/a5c6/src/CircularBuffer.v:82]
+	Parameter size bound to: 44100 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* RAM_STYLE = "block" *) [/nfs/ug/homes-0/y/yusufal5/Desktop/ChorusFilterTester/project_1/project_1.srcs/sources_1/bd/design_1/ipshared/a5c6/src/CircularBuffer.v:90]
+INFO: [Synth 8-256] done synthesizing module 'BRAM2' (3#1) [/nfs/ug/homes-0/y/yusufal5/Desktop/ChorusFilterTester/project_1/project_1.srcs/sources_1/bd/design_1/ipshared/a5c6/src/CircularBuffer.v:82]
+INFO: [Synth 8-256] done synthesizing module 'CircularBuffer' (4#1) [/nfs/ug/homes-0/y/yusufal5/Desktop/ChorusFilterTester/project_1/project_1.srcs/sources_1/bd/design_1/ipshared/a5c6/src/CircularBuffer.v:7]
+INFO: [Synth 8-256] done synthesizing module 'ChorusFilter' (5#1) [/nfs/ug/homes-0/y/yusufal5/Desktop/ChorusFilterTester/project_1/project_1.srcs/sources_1/bd/design_1/ipshared/a5c6/src/ChorusFilter.v:23]
+INFO: [Synth 8-256] done synthesizing module 'ChorusFilter_v1_0' (6#1) [/nfs/ug/homes-0/y/yusufal5/Desktop/ChorusFilterTester/project_1/project_1.srcs/sources_1/bd/design_1/ipshared/a5c6/hdl/ChorusFilter_v1_0.v:4]
+INFO: [Synth 8-256] done synthesizing module 'design_1_ChorusFilter_0_3' (7#1) [/nfs/ug/homes-0/y/yusufal5/Desktop/ChorusFilterTester/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_ChorusFilter_0_3/synth/design_1_ChorusFilter_0_3.v:56]
+WARNING: [Synth 8-3331] design BRAM has unconnected port resetn
+WARNING: [Synth 8-3331] design ChorusFilter_v1_0 has unconnected port s00_axis_tdata[31]
+WARNING: [Synth 8-3331] design ChorusFilter_v1_0 has unconnected port s00_axis_tdata[30]
+WARNING: [Synth 8-3331] design ChorusFilter_v1_0 has unconnected port s00_axis_tdata[29]
+WARNING: [Synth 8-3331] design ChorusFilter_v1_0 has unconnected port s00_axis_tdata[28]
+WARNING: [Synth 8-3331] design ChorusFilter_v1_0 has unconnected port s00_axis_tdata[27]
+WARNING: [Synth 8-3331] design ChorusFilter_v1_0 has unconnected port s00_axis_tdata[26]
+WARNING: [Synth 8-3331] design ChorusFilter_v1_0 has unconnected port s00_axis_tdata[25]
+WARNING: [Synth 8-3331] design ChorusFilter_v1_0 has unconnected port s00_axis_tdata[24]
+WARNING: [Synth 8-3331] design ChorusFilter_v1_0 has unconnected port s00_axis_tdata[23]
+WARNING: [Synth 8-3331] design ChorusFilter_v1_0 has unconnected port s00_axis_tdata[22]
+WARNING: [Synth 8-3331] design ChorusFilter_v1_0 has unconnected port s00_axis_tdata[21]
+WARNING: [Synth 8-3331] design ChorusFilter_v1_0 has unconnected port s00_axis_tdata[20]
+WARNING: [Synth 8-3331] design ChorusFilter_v1_0 has unconnected port s00_axis_tdata[19]
+WARNING: [Synth 8-3331] design ChorusFilter_v1_0 has unconnected port s00_axis_tdata[18]
+WARNING: [Synth 8-3331] design ChorusFilter_v1_0 has unconnected port s00_axis_tdata[17]
+WARNING: [Synth 8-3331] design ChorusFilter_v1_0 has unconnected port s00_axis_tdata[16]
+WARNING: [Synth 8-3331] design ChorusFilter_v1_0 has unconnected port s00_axis_tstrb[3]
+WARNING: [Synth 8-3331] design ChorusFilter_v1_0 has unconnected port s00_axis_tstrb[2]
+WARNING: [Synth 8-3331] design ChorusFilter_v1_0 has unconnected port s00_axis_tstrb[1]
+WARNING: [Synth 8-3331] design ChorusFilter_v1_0 has unconnected port s00_axis_tstrb[0]
+WARNING: [Synth 8-3331] design ChorusFilter_v1_0 has unconnected port s00_axis_tlast
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1320.109 ; gain = 191.758 ; free physical = 4684 ; free virtual = 34163
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin LUT:dataIn[15] to constant 0 [/nfs/ug/homes-0/y/yusufal5/Desktop/ChorusFilterTester/project_1/project_1.srcs/sources_1/bd/design_1/ipshared/a5c6/src/SineLUT.v:25]
+WARNING: [Synth 8-3295] tying undriven pin LUT:dataIn[14] to constant 0 [/nfs/ug/homes-0/y/yusufal5/Desktop/ChorusFilterTester/project_1/project_1.srcs/sources_1/bd/design_1/ipshared/a5c6/src/SineLUT.v:25]
+WARNING: [Synth 8-3295] tying undriven pin LUT:dataIn[13] to constant 0 [/nfs/ug/homes-0/y/yusufal5/Desktop/ChorusFilterTester/project_1/project_1.srcs/sources_1/bd/design_1/ipshared/a5c6/src/SineLUT.v:25]
+WARNING: [Synth 8-3295] tying undriven pin LUT:dataIn[12] to constant 0 [/nfs/ug/homes-0/y/yusufal5/Desktop/ChorusFilterTester/project_1/project_1.srcs/sources_1/bd/design_1/ipshared/a5c6/src/SineLUT.v:25]
+WARNING: [Synth 8-3295] tying undriven pin LUT:dataIn[11] to constant 0 [/nfs/ug/homes-0/y/yusufal5/Desktop/ChorusFilterTester/project_1/project_1.srcs/sources_1/bd/design_1/ipshared/a5c6/src/SineLUT.v:25]
+WARNING: [Synth 8-3295] tying undriven pin LUT:dataIn[10] to constant 0 [/nfs/ug/homes-0/y/yusufal5/Desktop/ChorusFilterTester/project_1/project_1.srcs/sources_1/bd/design_1/ipshared/a5c6/src/SineLUT.v:25]
+WARNING: [Synth 8-3295] tying undriven pin LUT:dataIn[9] to constant 0 [/nfs/ug/homes-0/y/yusufal5/Desktop/ChorusFilterTester/project_1/project_1.srcs/sources_1/bd/design_1/ipshared/a5c6/src/SineLUT.v:25]
+WARNING: [Synth 8-3295] tying undriven pin LUT:dataIn[8] to constant 0 [/nfs/ug/homes-0/y/yusufal5/Desktop/ChorusFilterTester/project_1/project_1.srcs/sources_1/bd/design_1/ipshared/a5c6/src/SineLUT.v:25]
+WARNING: [Synth 8-3295] tying undriven pin LUT:dataIn[7] to constant 0 [/nfs/ug/homes-0/y/yusufal5/Desktop/ChorusFilterTester/project_1/project_1.srcs/sources_1/bd/design_1/ipshared/a5c6/src/SineLUT.v:25]
+WARNING: [Synth 8-3295] tying undriven pin LUT:dataIn[6] to constant 0 [/nfs/ug/homes-0/y/yusufal5/Desktop/ChorusFilterTester/project_1/project_1.srcs/sources_1/bd/design_1/ipshared/a5c6/src/SineLUT.v:25]
+WARNING: [Synth 8-3295] tying undriven pin LUT:dataIn[5] to constant 0 [/nfs/ug/homes-0/y/yusufal5/Desktop/ChorusFilterTester/project_1/project_1.srcs/sources_1/bd/design_1/ipshared/a5c6/src/SineLUT.v:25]
+WARNING: [Synth 8-3295] tying undriven pin LUT:dataIn[4] to constant 0 [/nfs/ug/homes-0/y/yusufal5/Desktop/ChorusFilterTester/project_1/project_1.srcs/sources_1/bd/design_1/ipshared/a5c6/src/SineLUT.v:25]
+WARNING: [Synth 8-3295] tying undriven pin LUT:dataIn[3] to constant 0 [/nfs/ug/homes-0/y/yusufal5/Desktop/ChorusFilterTester/project_1/project_1.srcs/sources_1/bd/design_1/ipshared/a5c6/src/SineLUT.v:25]
+WARNING: [Synth 8-3295] tying undriven pin LUT:dataIn[2] to constant 0 [/nfs/ug/homes-0/y/yusufal5/Desktop/ChorusFilterTester/project_1/project_1.srcs/sources_1/bd/design_1/ipshared/a5c6/src/SineLUT.v:25]
+WARNING: [Synth 8-3295] tying undriven pin LUT:dataIn[1] to constant 0 [/nfs/ug/homes-0/y/yusufal5/Desktop/ChorusFilterTester/project_1/project_1.srcs/sources_1/bd/design_1/ipshared/a5c6/src/SineLUT.v:25]
+WARNING: [Synth 8-3295] tying undriven pin LUT:dataIn[0] to constant 0 [/nfs/ug/homes-0/y/yusufal5/Desktop/ChorusFilterTester/project_1/project_1.srcs/sources_1/bd/design_1/ipshared/a5c6/src/SineLUT.v:25]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1320.109 ; gain = 191.758 ; free physical = 4686 ; free virtual = 34166
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.03 . Memory (MB): peak = 1646.281 ; gain = 0.000 ; free physical = 4456 ; free virtual = 33935
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1646.281 ; gain = 517.930 ; free physical = 4519 ; free virtual = 33998
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1646.281 ; gain = 517.930 ; free physical = 4519 ; free virtual = 33998
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1646.281 ; gain = 517.930 ; free physical = 4520 ; free virtual = 34000
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6014] Unused sequential element writeAddr_reg was removed.  [/nfs/ug/homes-0/y/yusufal5/Desktop/ChorusFilterTester/project_1/project_1.srcs/sources_1/bd/design_1/ipshared/a5c6/src/CircularBuffer.v:49]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1646.281 ; gain = 517.930 ; free physical = 4514 ; free virtual = 33994
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     18 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 2     
+	   3 Input     16 Bit       Adders := 2     
++---Registers : 
+	               16 Bit    Registers := 6     
++---RAMs : 
+	             689K Bit         RAMs := 2     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module BRAM 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
++---RAMs : 
+	             689K Bit         RAMs := 1     
+Module SineLUT 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module BRAM2 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
++---RAMs : 
+	             689K Bit         RAMs := 1     
+Module CircularBuffer 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     18 Bit       Adders := 1     
+	   3 Input     16 Bit       Adders := 2     
+	   2 Input     16 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6014] Unused sequential element inst/chorusFilter/circBuff/dataOut2_reg was removed.  [/nfs/ug/homes-0/y/yusufal5/Desktop/ChorusFilterTester/project_1/project_1.srcs/sources_1/bd/design_1/ipshared/a5c6/src/CircularBuffer.v:33]
+WARNING: [Synth 8-6014] Unused sequential element inst/chorusFilter/circBuff/writeAddr_reg was removed.  [/nfs/ug/homes-0/y/yusufal5/Desktop/ChorusFilterTester/project_1/project_1.srcs/sources_1/bd/design_1/ipshared/a5c6/src/CircularBuffer.v:49]
+INFO: [Synth 8-3917] design design_1_ChorusFilter_0_3 has port s00_axis_tready driven by constant 1
+WARNING: [Synth 8-3331] design design_1_ChorusFilter_0_3 has unconnected port s00_axis_tdata[31]
+WARNING: [Synth 8-3331] design design_1_ChorusFilter_0_3 has unconnected port s00_axis_tdata[30]
+WARNING: [Synth 8-3331] design design_1_ChorusFilter_0_3 has unconnected port s00_axis_tdata[29]
+WARNING: [Synth 8-3331] design design_1_ChorusFilter_0_3 has unconnected port s00_axis_tdata[28]
+WARNING: [Synth 8-3331] design design_1_ChorusFilter_0_3 has unconnected port s00_axis_tdata[27]
+WARNING: [Synth 8-3331] design design_1_ChorusFilter_0_3 has unconnected port s00_axis_tdata[26]
+WARNING: [Synth 8-3331] design design_1_ChorusFilter_0_3 has unconnected port s00_axis_tdata[25]
+WARNING: [Synth 8-3331] design design_1_ChorusFilter_0_3 has unconnected port s00_axis_tdata[24]
+WARNING: [Synth 8-3331] design design_1_ChorusFilter_0_3 has unconnected port s00_axis_tdata[23]
+WARNING: [Synth 8-3331] design design_1_ChorusFilter_0_3 has unconnected port s00_axis_tdata[22]
+WARNING: [Synth 8-3331] design design_1_ChorusFilter_0_3 has unconnected port s00_axis_tdata[21]
+WARNING: [Synth 8-3331] design design_1_ChorusFilter_0_3 has unconnected port s00_axis_tdata[20]
+WARNING: [Synth 8-3331] design design_1_ChorusFilter_0_3 has unconnected port s00_axis_tdata[19]
+WARNING: [Synth 8-3331] design design_1_ChorusFilter_0_3 has unconnected port s00_axis_tdata[18]
+WARNING: [Synth 8-3331] design design_1_ChorusFilter_0_3 has unconnected port s00_axis_tdata[17]
+WARNING: [Synth 8-3331] design design_1_ChorusFilter_0_3 has unconnected port s00_axis_tdata[16]
+WARNING: [Synth 8-3331] design design_1_ChorusFilter_0_3 has unconnected port s00_axis_tstrb[3]
+WARNING: [Synth 8-3331] design design_1_ChorusFilter_0_3 has unconnected port s00_axis_tstrb[2]
+WARNING: [Synth 8-3331] design design_1_ChorusFilter_0_3 has unconnected port s00_axis_tstrb[1]
+WARNING: [Synth 8-3331] design design_1_ChorusFilter_0_3 has unconnected port s00_axis_tstrb[0]
+WARNING: [Synth 8-3331] design design_1_ChorusFilter_0_3 has unconnected port s00_axis_tlast
+WARNING: [Synth 8-6014] Unused sequential element inst/chorusFilter/circBuff/buffer/dataOut_reg was removed.  [/nfs/ug/homes-0/y/yusufal5/Desktop/ChorusFilterTester/project_1/project_1.srcs/sources_1/bd/design_1/ipshared/a5c6/src/CircularBuffer.v:105]
+WARNING: [Synth 8-6014] Unused sequential element inst/chorusFilter/circBuff/buffer/memory_reg was removed. 
+WARNING: [Synth 8-5730] RAM inst/chorusFilter/circBuff/buffer/memory_reg got removed due to cross hierarchy optimization. 
+INFO: [Synth 8-3332] Sequential element (inst/chorusFilter/LUT/addrCounter_reg[15]) is unused and will be removed from module design_1_ChorusFilter_0_3.
+INFO: [Synth 8-3332] Sequential element (inst/chorusFilter/LUT/addrCounter_reg[14]) is unused and will be removed from module design_1_ChorusFilter_0_3.
+INFO: [Synth 8-3332] Sequential element (inst/chorusFilter/LUT/addrCounter_reg[13]) is unused and will be removed from module design_1_ChorusFilter_0_3.
+INFO: [Synth 8-3332] Sequential element (inst/chorusFilter/LUT/addrCounter_reg[12]) is unused and will be removed from module design_1_ChorusFilter_0_3.
+INFO: [Synth 8-3332] Sequential element (inst/chorusFilter/LUT/addrCounter_reg[11]) is unused and will be removed from module design_1_ChorusFilter_0_3.
+INFO: [Synth 8-3332] Sequential element (inst/chorusFilter/LUT/addrCounter_reg[10]) is unused and will be removed from module design_1_ChorusFilter_0_3.
+INFO: [Synth 8-3332] Sequential element (inst/chorusFilter/LUT/addrCounter_reg[9]) is unused and will be removed from module design_1_ChorusFilter_0_3.
+INFO: [Synth 8-3332] Sequential element (inst/chorusFilter/LUT/addrCounter_reg[8]) is unused and will be removed from module design_1_ChorusFilter_0_3.
+INFO: [Synth 8-3332] Sequential element (inst/chorusFilter/LUT/addrCounter_reg[7]) is unused and will be removed from module design_1_ChorusFilter_0_3.
+INFO: [Synth 8-3332] Sequential element (inst/chorusFilter/LUT/addrCounter_reg[6]) is unused and will be removed from module design_1_ChorusFilter_0_3.
+INFO: [Synth 8-3332] Sequential element (inst/chorusFilter/LUT/addrCounter_reg[5]) is unused and will be removed from module design_1_ChorusFilter_0_3.
+INFO: [Synth 8-3332] Sequential element (inst/chorusFilter/LUT/addrCounter_reg[4]) is unused and will be removed from module design_1_ChorusFilter_0_3.
+INFO: [Synth 8-3332] Sequential element (inst/chorusFilter/LUT/addrCounter_reg[3]) is unused and will be removed from module design_1_ChorusFilter_0_3.
+INFO: [Synth 8-3332] Sequential element (inst/chorusFilter/LUT/addrCounter_reg[2]) is unused and will be removed from module design_1_ChorusFilter_0_3.
+INFO: [Synth 8-3332] Sequential element (inst/chorusFilter/LUT/addrCounter_reg[1]) is unused and will be removed from module design_1_ChorusFilter_0_3.
+INFO: [Synth 8-3332] Sequential element (inst/chorusFilter/LUT/addrCounter_reg[0]) is unused and will be removed from module design_1_ChorusFilter_0_3.
+INFO: [Synth 8-3332] Sequential element (inst/chorusFilter/circBuff/writeAddr_reg[0]) is unused and will be removed from module design_1_ChorusFilter_0_3.
+INFO: [Synth 8-3332] Sequential element (inst/chorusFilter/circBuff/writeAddr_reg[1]) is unused and will be removed from module design_1_ChorusFilter_0_3.
+INFO: [Synth 8-3332] Sequential element (inst/chorusFilter/circBuff/writeAddr_reg[2]) is unused and will be removed from module design_1_ChorusFilter_0_3.
+INFO: [Synth 8-3332] Sequential element (inst/chorusFilter/circBuff/writeAddr_reg[3]) is unused and will be removed from module design_1_ChorusFilter_0_3.
+INFO: [Synth 8-3332] Sequential element (inst/chorusFilter/circBuff/writeAddr_reg[4]) is unused and will be removed from module design_1_ChorusFilter_0_3.
+INFO: [Synth 8-3332] Sequential element (inst/chorusFilter/circBuff/writeAddr_reg[5]) is unused and will be removed from module design_1_ChorusFilter_0_3.
+INFO: [Synth 8-3332] Sequential element (inst/chorusFilter/circBuff/writeAddr_reg[6]) is unused and will be removed from module design_1_ChorusFilter_0_3.
+INFO: [Synth 8-3332] Sequential element (inst/chorusFilter/circBuff/writeAddr_reg[7]) is unused and will be removed from module design_1_ChorusFilter_0_3.
+INFO: [Synth 8-3332] Sequential element (inst/chorusFilter/circBuff/writeAddr_reg[8]) is unused and will be removed from module design_1_ChorusFilter_0_3.
+INFO: [Synth 8-3332] Sequential element (inst/chorusFilter/circBuff/writeAddr_reg[9]) is unused and will be removed from module design_1_ChorusFilter_0_3.
+INFO: [Synth 8-3332] Sequential element (inst/chorusFilter/circBuff/writeAddr_reg[10]) is unused and will be removed from module design_1_ChorusFilter_0_3.
+INFO: [Synth 8-3332] Sequential element (inst/chorusFilter/circBuff/writeAddr_reg[11]) is unused and will be removed from module design_1_ChorusFilter_0_3.
+INFO: [Synth 8-3332] Sequential element (inst/chorusFilter/circBuff/writeAddr_reg[12]) is unused and will be removed from module design_1_ChorusFilter_0_3.
+INFO: [Synth 8-3332] Sequential element (inst/chorusFilter/circBuff/writeAddr_reg[13]) is unused and will be removed from module design_1_ChorusFilter_0_3.
+INFO: [Synth 8-3332] Sequential element (inst/chorusFilter/circBuff/writeAddr_reg[14]) is unused and will be removed from module design_1_ChorusFilter_0_3.
+INFO: [Synth 8-3332] Sequential element (inst/chorusFilter/circBuff/writeAddr_reg[15]) is unused and will be removed from module design_1_ChorusFilter_0_3.
+INFO: [Synth 8-3332] Sequential element (inst/chorusFilter/circBuff/readAddr_reg[15]) is unused and will be removed from module design_1_ChorusFilter_0_3.
+INFO: [Synth 8-3332] Sequential element (inst/chorusFilter/circBuff/readAddr_reg[14]) is unused and will be removed from module design_1_ChorusFilter_0_3.
+INFO: [Synth 8-3332] Sequential element (inst/chorusFilter/circBuff/readAddr_reg[13]) is unused and will be removed from module design_1_ChorusFilter_0_3.
+INFO: [Synth 8-3332] Sequential element (inst/chorusFilter/circBuff/readAddr_reg[12]) is unused and will be removed from module design_1_ChorusFilter_0_3.
+INFO: [Synth 8-3332] Sequential element (inst/chorusFilter/circBuff/readAddr_reg[11]) is unused and will be removed from module design_1_ChorusFilter_0_3.
+INFO: [Synth 8-3332] Sequential element (inst/chorusFilter/circBuff/readAddr_reg[10]) is unused and will be removed from module design_1_ChorusFilter_0_3.
+INFO: [Synth 8-3332] Sequential element (inst/chorusFilter/circBuff/readAddr_reg[9]) is unused and will be removed from module design_1_ChorusFilter_0_3.
+INFO: [Synth 8-3332] Sequential element (inst/chorusFilter/circBuff/readAddr_reg[8]) is unused and will be removed from module design_1_ChorusFilter_0_3.
+INFO: [Synth 8-3332] Sequential element (inst/chorusFilter/circBuff/readAddr_reg[7]) is unused and will be removed from module design_1_ChorusFilter_0_3.
+INFO: [Synth 8-3332] Sequential element (inst/chorusFilter/circBuff/readAddr_reg[6]) is unused and will be removed from module design_1_ChorusFilter_0_3.
+INFO: [Synth 8-3332] Sequential element (inst/chorusFilter/circBuff/readAddr_reg[5]) is unused and will be removed from module design_1_ChorusFilter_0_3.
+INFO: [Synth 8-3332] Sequential element (inst/chorusFilter/circBuff/readAddr_reg[4]) is unused and will be removed from module design_1_ChorusFilter_0_3.
+INFO: [Synth 8-3332] Sequential element (inst/chorusFilter/circBuff/readAddr_reg[3]) is unused and will be removed from module design_1_ChorusFilter_0_3.
+INFO: [Synth 8-3332] Sequential element (inst/chorusFilter/circBuff/readAddr_reg[2]) is unused and will be removed from module design_1_ChorusFilter_0_3.
+INFO: [Synth 8-3332] Sequential element (inst/chorusFilter/circBuff/readAddr_reg[1]) is unused and will be removed from module design_1_ChorusFilter_0_3.
+INFO: [Synth 8-3332] Sequential element (inst/chorusFilter/circBuff/readAddr_reg[0]) is unused and will be removed from module design_1_ChorusFilter_0_3.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1646.281 ; gain = 517.930 ; free physical = 4507 ; free virtual = 33986
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1646.281 ; gain = 517.930 ; free physical = 4350 ; free virtual = 33827
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1646.281 ; gain = 517.930 ; free physical = 4349 ; free virtual = 33826
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1646.281 ; gain = 517.930 ; free physical = 4347 ; free virtual = 33824
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1646.281 ; gain = 517.930 ; free physical = 4452 ; free virtual = 33928
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1646.281 ; gain = 517.930 ; free physical = 4452 ; free virtual = 33928
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1646.281 ; gain = 517.930 ; free physical = 4450 ; free virtual = 33926
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1646.281 ; gain = 517.930 ; free physical = 4450 ; free virtual = 33926
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1646.281 ; gain = 517.930 ; free physical = 4452 ; free virtual = 33928
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1646.281 ; gain = 517.930 ; free physical = 4451 ; free virtual = 33927
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |FDRE |    16|
++------+-----+------+
+
+Report Instance Areas: 
++------+-----------------+------------------+------+
+|      |Instance         |Module            |Cells |
++------+-----------------+------------------+------+
+|1     |top              |                  |    16|
+|2     |  inst           |ChorusFilter_v1_0 |    16|
+|3     |    chorusFilter |ChorusFilter      |    16|
+|4     |      circBuff   |CircularBuffer    |    16|
++------+-----------------+------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1646.281 ; gain = 517.930 ; free physical = 4451 ; free virtual = 33928
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 27 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1646.281 ; gain = 191.758 ; free physical = 4500 ; free virtual = 33976
+Synthesis Optimization Complete : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1646.281 ; gain = 517.930 ; free physical = 4504 ; free virtual = 33980
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+73 Infos, 66 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1646.281 ; gain = 530.512 ; free physical = 4493 ; free virtual = 33969
+INFO: [Common 17-1381] The checkpoint '/nfs/ug/homes-0/y/yusufal5/Desktop/ChorusFilterTester/project_1/project_1.runs/design_1_ChorusFilter_0_3_synth_1/design_1_ChorusFilter_0_3.dcp' has been generated.
+INFO: [Coretcl 2-1482] Added synthesis output to IP cache for IP /nfs/ug/homes-0/y/yusufal5/Desktop/ChorusFilterTester/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_ChorusFilter_0_3/design_1_ChorusFilter_0_3.xci
+INFO: [Coretcl 2-1174] Renamed 3 cell refs.
+INFO: [Common 17-1381] The checkpoint '/nfs/ug/homes-0/y/yusufal5/Desktop/ChorusFilterTester/project_1/project_1.runs/design_1_ChorusFilter_0_3_synth_1/design_1_ChorusFilter_0_3.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.06 . Memory (MB): peak = 1646.281 ; gain = 0.000 ; free physical = 4493 ; free virtual = 33970
+INFO: [Common 17-206] Exiting Vivado at Wed Mar 21 13:54:23 2018...

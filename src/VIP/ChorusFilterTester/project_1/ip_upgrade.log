@@ -1,0 +1,37 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.2 (lin64) Build 1909853 Thu Jun 15 18:39:10 MDT 2017
+| Date         : Wed Mar 21 13:53:46 2018
+| Host         : ug241 running 64-bit Debian GNU/Linux 9.4 (stretch)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_ChorusFilter_0_3'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_ChorusFilter_0_3 (user.org:user:ChorusFilter:1.0) from (Rev. 3) to (Rev. 4)
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.2 (lin64) Build 1909853 Thu Jun 15 18:39:10 MDT 2017
+| Date         : Mon Mar 19 19:35:23 2018
+| Host         : ug240 running 64-bit Debian GNU/Linux 9.4 (stretch)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_ChorusFilter_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_ChorusFilter_0_0 (user.org:user:ChorusFilter:1.0) from (Rev. 2) to (Rev. 3)
+

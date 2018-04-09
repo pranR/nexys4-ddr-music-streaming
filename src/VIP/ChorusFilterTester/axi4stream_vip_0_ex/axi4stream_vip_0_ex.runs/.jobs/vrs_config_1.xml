@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="ex_sim_axi4stream_vip_mst_0_synth_1" LaunchDir="/nfs/ug/homes-0/y/yusufal5/Desktop/ChorusFilterTester/axi4stream_vip_0_ex/axi4stream_vip_0_ex.runs/ex_sim_axi4stream_vip_mst_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="ex_sim_axi4stream_vip_passthrough_0_synth_1" LaunchDir="/nfs/ug/homes-0/y/yusufal5/Desktop/ChorusFilterTester/axi4stream_vip_0_ex/axi4stream_vip_0_ex.runs/ex_sim_axi4stream_vip_passthrough_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="ex_sim_axi4stream_vip_slv_0_synth_1" LaunchDir="/nfs/ug/homes-0/y/yusufal5/Desktop/ChorusFilterTester/axi4stream_vip_0_ex/axi4stream_vip_0_ex.runs/ex_sim_axi4stream_vip_slv_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+</Runs>
+

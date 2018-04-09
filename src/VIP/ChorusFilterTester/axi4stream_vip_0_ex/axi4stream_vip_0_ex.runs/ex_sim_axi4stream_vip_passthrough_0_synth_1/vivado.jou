@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:10 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Wed Mar 21 13:27:36 2018
+# Process ID: 12773
+# Current directory: /nfs/ug/homes-0/y/yusufal5/Desktop/ChorusFilterTester/axi4stream_vip_0_ex/axi4stream_vip_0_ex.runs/ex_sim_axi4stream_vip_passthrough_0_synth_1
+# Command line: vivado -log ex_sim_axi4stream_vip_passthrough_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ex_sim_axi4stream_vip_passthrough_0.tcl
+# Log file: /nfs/ug/homes-0/y/yusufal5/Desktop/ChorusFilterTester/axi4stream_vip_0_ex/axi4stream_vip_0_ex.runs/ex_sim_axi4stream_vip_passthrough_0_synth_1/ex_sim_axi4stream_vip_passthrough_0.vds
+# Journal file: /nfs/ug/homes-0/y/yusufal5/Desktop/ChorusFilterTester/axi4stream_vip_0_ex/axi4stream_vip_0_ex.runs/ex_sim_axi4stream_vip_passthrough_0_synth_1/vivado.jou
+#-----------------------------------------------------------
+source ex_sim_axi4stream_vip_passthrough_0.tcl -notrace

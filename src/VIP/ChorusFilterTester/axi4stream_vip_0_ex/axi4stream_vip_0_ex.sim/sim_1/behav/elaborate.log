@@ -1,0 +1,39 @@
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: /cad1/Xilinx/Vivado/2017.2/bin/unwrapped/lnx64.o/xelab -wto a5eeb679ace84249b6406f50e0a21206 --debug typical --relax --mt 8 -L axis_infrastructure_v1_1_0 -L xil_common_vip_v1_0_0 -L axis_protocol_checker_v1_1_13 -L axi4stream_vip_v1_0_1 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot axi4stream_vip_0_exdes_tb_behav xil_defaultlib.axi4stream_vip_0_exdes_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-597] element index 8 into user_eq is out of bounds [/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axis_protocol_checker_v1_1/hdl/axis_protocol_checker_v1_1_vl_rfs.v:294]
+WARNING: [VRFC 10-597] element index 8 into tuser_stage_1_eq is out of bounds [/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axis_protocol_checker_v1_1/hdl/axis_protocol_checker_v1_1_vl_rfs.v:304]
+WARNING: [VRFC 10-597] element index 8 into data_eq is out of bounds [/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axis_protocol_checker_v1_1/hdl/axis_protocol_checker_v1_1_vl_rfs.v:314]
+WARNING: [VRFC 10-597] element index 8 into keep_eq is out of bounds [/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axis_protocol_checker_v1_1/hdl/axis_protocol_checker_v1_1_vl_rfs.v:315]
+WARNING: [VRFC 10-597] element index 8 into strb_eq is out of bounds [/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axis_protocol_checker_v1_1/hdl/axis_protocol_checker_v1_1_vl_rfs.v:316]
+WARNING: [VRFC 10-597] element index 8 into tdata_stage_1_eq is out of bounds [/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axis_protocol_checker_v1_1/hdl/axis_protocol_checker_v1_1_vl_rfs.v:327]
+WARNING: [VRFC 10-597] element index 8 into tkeep_stage_1_eq is out of bounds [/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axis_protocol_checker_v1_1/hdl/axis_protocol_checker_v1_1_vl_rfs.v:328]
+WARNING: [VRFC 10-597] element index 8 into tstrb_stage_1_eq is out of bounds [/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axis_protocol_checker_v1_1/hdl/axis_protocol_checker_v1_1_vl_rfs.v:329]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module axi4stream_vip_v1_0_1.axi4stream_vip_v1_0_1_if(C_AXI4S...
+Compiling module axis_protocol_checker_v1_1_13.axis_protocol_checker_v1_1_13_as...
+Compiling module axis_protocol_checker_v1_1_13.axis_protocol_checker_v1_1_13_re...
+Compiling module axis_protocol_checker_v1_1_13.axis_protocol_checker_v1_1_13_to...
+Compiling module axi4stream_vip_v1_0_1.axi4stream_vip_v1_0_1_top(C_AXI4...
+Compiling module xil_defaultlib.ex_sim_axi4stream_vip_mst_0
+Compiling module axi4stream_vip_v1_0_1.axi4stream_vip_v1_0_1_top(C_AXI4...
+Compiling module xil_defaultlib.ex_sim_axi4stream_vip_passthroug...
+Compiling module axi4stream_vip_v1_0_1.axi4stream_vip_v1_0_1_top(C_AXI4...
+Compiling module xil_defaultlib.ex_sim_axi4stream_vip_slv_0
+Compiling module xil_defaultlib.ex_sim
+Compiling module xil_defaultlib.chip
+Compiling module xil_defaultlib.axi4stream_vip_0_exdes_tb
+Compiling module xil_defaultlib.glbl
+Compiling package axi4stream_vip_v1_0_1.axi4stream_vip_v1_0_1_pkg
+WARNING: [XSIM 43-4333] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi4stream_vip_v1_0/hdl/axi4stream_vip_v1_0_vl_rfs.sv" Line 1092 : Logical comparison involving System Verilog dynamic types not supported yet, can lead to incorrect simulation behaviour.
+WARNING: [XSIM 43-4333] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi4stream_vip_v1_0/hdl/axi4stream_vip_v1_0_vl_rfs.sv" Line 1100 : Logical comparison involving System Verilog dynamic types not supported yet, can lead to incorrect simulation behaviour.
+WARNING: [XSIM 43-4333] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi4stream_vip_v1_0/hdl/axi4stream_vip_v1_0_vl_rfs.sv" Line 1112 : Logical comparison involving System Verilog dynamic types not supported yet, can lead to incorrect simulation behaviour.
+WARNING: [XSIM 43-4333] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi4stream_vip_v1_0/hdl/axi4stream_vip_v1_0_vl_rfs.sv" Line 1330 : Logical comparison involving System Verilog dynamic types not supported yet, can lead to incorrect simulation behaviour.
+WARNING: [XSIM 43-4333] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi4stream_vip_v1_0/hdl/axi4stream_vip_v1_0_vl_rfs.sv" Line 1330 : Logical comparison involving System Verilog dynamic types not supported yet, can lead to incorrect simulation behaviour.
+Compiling package xil_common_vip_v1_0_0.xil_common_vip_v1_0_0_pkg
+Built simulation snapshot axi4stream_vip_0_exdes_tb_behav
