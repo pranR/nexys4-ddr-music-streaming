@@ -2,7 +2,7 @@
 
 # Nexys 4 DDR Music Streaming System
 
-# Streams music from a PC server to Nexys 4 DDR board and outputs audio to networked speaker with Bluetooth controller.
+Streams music from a PC server to Nexys 4 DDR board and outputs audio to networked speaker with Bluetooth controller.
 
 # How to use:
 1. Setup Vivado project in /src
